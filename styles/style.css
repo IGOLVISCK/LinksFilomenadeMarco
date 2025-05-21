@@ -114,25 +114,17 @@ body{
     .links{
         margin-right: 10%;
     }
-}
-@media (max-width: 390px){
-    body {
-        background-repeat: repeat;
-        
+    .user-info_img{
+        width: 9rem;
     }
-    .conteudo{
-        margin-top: 5rem;
-        flex-direction: column;
-        gap: 2rem;
-        margin-left: 10%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .user-info_text{
+        font-size: large;
     }
-    .user-info-conteiner{
-        margin: 0;
+    .ordenlist-link li{
+        padding: 1rem 3rem;
     }
 }
+
 @media (max-height: 667px){
     body {
         background-repeat: repeat;
