@@ -23,28 +23,54 @@ body{
     box-sizing: border-box;
     max-width: 100%;
 }body{
-     background-image: var(--gradient-background--);
-     background-repeat: no-repeat;
-     background-size: 100%;
+    background-color: var(--preto--);
 }
 .conteudo{
+    padding: 2rem;
     display: flex;
-    gap: 10rem;
+    gap: 7rem;
+    border: solid darkgreen;
+    border-radius: 30% 0% 30% 0%;
+    box-shadow: 2px 2px 4px #63da75;
+    background: linear-gradient(
+        270deg,
+        rgba(224, 248, 224, 0.2),
+        rgba(160, 216, 160, 0.2),
+        rgba(112, 192, 112, 0.2),
+        rgba(64, 168, 96, 0.2),
+        rgba(32, 128, 64, 0.2),
+        rgba(64, 168, 96, 0.2),
+        rgba(112, 192, 112, 0.2),
+        rgba(160, 216, 160, 0.2),
+        rgba(224, 248, 224, 0.2)
+      );
+       background-size: 600% 100%; /*A largura do fundo(600%) é 6 vezes maior do que o tamanho do elemento.*/
+    animation: moverBackgroundVerde s linear infinite;
+}@keyframes moverBackgroundVerde {
+      0% {
+        background-position: 100% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
 }
 
 .user-info-conteiner{
     text-align: center;
 }
 .user-info_img{
-    width: 15rem;
+    width: 8rem;
     border-radius: 19rem;
-    border: solid var(--preto--);
 }
 .user-info_text{
     color: var(--branco--);
-    font-size:x-large;
+    font-size:large;
     font-weight: bold;
     font-family: var(--font-tittle--);
+}
+
+.links{
+    padding: 0;
 }
 
 .ordenlist-link li{
@@ -52,9 +78,34 @@ body{
     list-style-type: none;
     border: solid var(--preto--);
     border-radius: 5rem;
-    padding: 2rem 6rem;
-    background-color: var(--branco--);
-}.ordenlist-link li:hover{
+    box-shadow: 2px 2px 4px #ffffff;
+    padding: 0.5rem 3rem;
+    /*DEGRADE DO BACK GROUND*/
+    background: linear-gradient(
+      270deg,
+      rgba(224, 240, 255, 0.6),
+      rgba(160, 200, 240, 0.6),
+      rgba(112, 176, 224, 0.6),
+      rgba(64, 144, 208, 0.6),
+      rgba(32, 112, 192, 0.6),
+      rgba(64, 144, 208, 0.6),
+      rgba(112, 176, 224, 0.6),
+      rgba(160, 200, 240, 0.6),
+      rgba(224, 240, 255, 0.6)
+    );
+    background-size: 600% 100%; /*A largura do fundo(600%) é 6 vezes maior do que o tamanho do elemento.*/
+    animation: moverBackgroundAzul 4s linear infinite;
+}@keyframes moverBackgroundAzul {
+      0% {
+        background-position: 100% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+}
+
+
+.ordenlist-link li:hover{
     background-color: var(--hover-link--);
     border: solid var(--branco--);
 }
@@ -63,6 +114,7 @@ body{
     color: var(--preto--);
     font-family: var(--font-link);
     font-weight: bold;
+    font-size: small;
 }.item-link{
     display: flex;
     justify-content: center;
@@ -83,17 +135,17 @@ body{
     align-items: center;
 }
 .redesociais img{
-    width: 5rem;
-    height: 5rem;
-} #instaicon{
     width: 3rem;
     height: 3rem;
+} #instaicon{
+    width: 2rem;
+    height: 2rem;
 }
 .redesociais img:hover{
-    width: 5.5rem;
+    width: 3.1rem;
 }
 #instaicon:hover{
-    width: 3.5rem;
+    width: 2.1rem;
 }
 
 /*MEDIAS CELULARES*/
