@@ -41,6 +41,7 @@ body{
     border: solid var(--preto--);
 }
 .user-info_text{
+    color: var(--branco--);
     font-size:x-large;
     font-weight: bold;
     font-family: var(--font-tittle--);
@@ -125,7 +126,7 @@ body{
     }
 }
 
-@media (max-height: 667px){
+/* @media (max-height: 667px){
     body {
         background-repeat: repeat;
         
@@ -142,7 +143,7 @@ body{
     .user-info-conteiner{
         margin: 0;
     }
-}
+} */
 
 /*MEDIAS PARA TABLET*/
 @media (min-width: 768px) and (max-width: 1024px){
