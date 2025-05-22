@@ -45,7 +45,7 @@ body{
         rgba(224, 248, 224, 0.2)
       );
        background-size: 600% 100%; /*A largura do fundo(600%) é 6 vezes maior do que o tamanho do elemento.*/
-    animation: moverBackgroundVerde s linear infinite;
+    animation: moverBackgroundVerde 5s linear infinite;
 }@keyframes moverBackgroundVerde {
       0% {
         background-position: 100% 0;
