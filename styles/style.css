@@ -176,6 +176,9 @@ body{
     .ordenlist-link li{
         padding: 1rem 3rem;
     }
+    .ordenlist-link a{
+        font-size: x-small;
+    }
 }
 
 /* @media (max-height: 667px){
