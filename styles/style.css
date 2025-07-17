@@ -1,211 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech&family=Tagesschrift&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cal+Sans&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url(/styles/media.css);
-
-
-:root{
-    --gradient-background--: repeating-linear-gradient(rgb(10, 34, 13), rgb(71, 177, 39), rgb(10, 34, 13));
-    --branco--: white;
-    --preto--: black;
-    --hover-link--: rgb(184, 173, 173);
-    --font-link: "Montserrat", sans-serif;
-    --font-tittle--: "Libre Baskerville", serif;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    max-width: 100%;
-}body{
-    background-color: var(--preto--);
-}
-.conteudo{
-    padding: 2rem;
-    display: flex;
-    gap: 7rem;
-    border: solid darkgreen;
-    border-radius: 30% 0% 30% 0%;
-    box-shadow: 2px 2px 4px #63da75;
-    background: linear-gradient(
-        270deg,
-        rgba(224, 248, 224, 0.2),
-        rgba(160, 216, 160, 0.2),
-        rgba(112, 192, 112, 0.2),
-        rgba(64, 168, 96, 0.2),
-        rgba(32, 128, 64, 0.2),
-        rgba(64, 168, 96, 0.2),
-        rgba(112, 192, 112, 0.2),
-        rgba(160, 216, 160, 0.2),
-        rgba(224, 248, 224, 0.2)
-      );
-       background-size: 600% 100%; /*A largura do fundo(600%) é 6 vezes maior do que o tamanho do elemento.*/
-    animation: moverBackgroundVerde 5s linear infinite;
-}@keyframes moverBackgroundVerde {
-      0% {
-        background-position: 100% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.user-info-conteiner{
-    text-align: center;
-}
-.user-info_img{
-    width: 8rem;
-    border-radius: 19rem;
-}
-.user-info_text{
-    color: var(--branco--);
-    font-size:large;
-    font-weight: bold;
-    font-family: var(--font-tittle--);
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
 }
 
-.links{
-    padding: 0;
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
-.ordenlist-link li{
-    margin-bottom: 2rem;
-    list-style-type: none;
-    border: solid var(--preto--);
-    border-radius: 5rem;
-    box-shadow: 2px 2px 4px #ffffff;
-    padding: 0.5rem 3rem;
-    /*DEGRADE DO BACK GROUND*/
-    background: linear-gradient(
-      270deg,
-      rgba(224, 240, 255, 0.6),
-      rgba(160, 200, 240, 0.6),
-      rgba(112, 176, 224, 0.6),
-      rgba(64, 144, 208, 0.6),
-      rgba(32, 112, 192, 0.6),
-      rgba(64, 144, 208, 0.6),
-      rgba(112, 176, 224, 0.6),
-      rgba(160, 200, 240, 0.6),
-      rgba(224, 240, 255, 0.6)
-    );
-    background-size: 600% 100%; /*A largura do fundo(600%) é 6 vezes maior do que o tamanho do elemento.*/
-    animation: moverBackgroundAzul 4s linear infinite;
-}@keyframes moverBackgroundAzul {
-      0% {
-        background-position: 100% 0;
-      }
-      100% {
-        background-position: 0 0;
-      }
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #004080;
 }
 
-
-.ordenlist-link li:hover{
-    background-color: var(--hover-link--);
-    border: solid var(--branco--);
-}
-.ordenlist-link a{
-    text-decoration: none;
-    color: var(--preto--);
-    font-family: var(--font-link);
-    font-weight: bold;
-    font-size: small;
-}.item-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
 }
 
-.img-link{
-    height: 2rem;
-    width: 2rem;
-}.img-link3{
-    height: 2.5rem;
+.link {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.3s ease;
 }
 
-.redesociais{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.redesociais img{
-    width: 3rem;
-    height: 3rem;
-} #instaicon{
-    width: 2rem;
-    height: 2rem;
-}
-.redesociais img:hover{
-    width: 3.1rem;
-}
-#instaicon:hover{
-    width: 2.1rem;
-}
+.instagram { background-color: #e1306c; }
+.instagram:hover { background-color: #c72b5f; }
 
-/*MEDIAS CELULARES*/
-@media (max-width: 450px){
-    body {
-        background-repeat: repeat;
-        
-    }
-    .conteudo{
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .user-info-conteiner{
-        margin: 0;
-    }
-    .links{
-        margin-right: 10%;
-    }
-    .user-info_img{
-        width: 9rem;
-    }
-    .user-info_text{
-        font-size: large;
-    }
-    .ordenlist-link li{
-        padding: 1rem 3rem;
-    }
-    .ordenlist-link a{
-        font-size: x-small;
-    }
-}
+.whatsapp { background-color: #25d366; }
+.whatsapp:hover { background-color: #1ebc5b; }
 
-/* @media (max-height: 667px){
-    body {
-        background-repeat: repeat;
-        
-    }
-    .conteudo{
-        margin-top: 10rem;
-        flex-direction: column;
-        gap: 2rem;
-        margin-left: 10%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .user-info-conteiner{
-        margin: 0;
-    }
-} */
+.maps { background-color: #4285f4; }
+.maps:hover { background-color: #357ae8; }
 
-/*MEDIAS PARA TABLET*/
-@media (min-width: 768px) and (max-width: 1024px){
-    body{
-        background-repeat: repeat;
-    }
-    .conteudo{
-        gap: 0;
-    }
+.site { background-color: #6c63ff; }
+.site:hover { background-color: #574fd9; }
+
+footer {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1rem;
 }
